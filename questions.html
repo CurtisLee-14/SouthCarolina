@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="questions.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">South Carolina</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/charleston/charleston.html">Charleston</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/columbia/columbia.html">Columbia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/greenville/greenville.html">Greenville</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./questions.html" id="nav-link">Questions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="grid-container">
+      <div class="form-box">
+        <form>
+          <label for="firstName">First Name:</label><br>
+          <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"><br><br>
+      
+          <label for="lastName">Last Name:</label><br>
+          <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"><br><br>
+      
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+      
+          <label for="confirmEmail">Confirm Email:</label><br>
+          <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm your email" onkeyup="verifyEmail()"><br><br>
+          <span id="error" class="error-message"></span><br><br>
+      
+          <label for="question">Question:</label><br>
+          <textarea id="question" name="question" placeholder="Ask your question here"></textarea><br><br>
+
+          <input type="button" value="Submit" id="button">
+        </form>
+      </div>
+      
+      <div class="map-block">
+        <img src="/images/state-map.jpg" alt="Map" id="map">
+        <p>South Carolina's topography is diverse, encompassing coastal plains, rolling hills, and the foothills of the Blue Ridge Mountains. 
+           The state features a predominantly low-lying coastal plain along the Atlantic Ocean, 
+           characterized by marshes, estuaries, and sandy beaches. Moving inland, the terrain transitions into gently rolling hills,
+           particularly in the Piedmont region, before ascending to the more rugged and elevated areas of the Blue Ridge Mountains in the
+           northwest. Rivers, including the Savannah, Edisto, and Pee Dee, traverse the state, contributing to its varied landscape 
+           and providing essential water resources for the region.
+          </p>
+      </div>
+    </div>
+
+
+    <script>
+      function verifyEmail() {
+        var email1 = document.getElementById("email").value;
+        var email2 = document.getElementById("confirmEmail").value;
+        var errorMessage = document.getElementById("error");
+  
+        if (email1 !== email2) {
+          errorMessage.textContent = "Email addresses do not match!";
+        } else {
+          errorMessage.textContent = "";
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

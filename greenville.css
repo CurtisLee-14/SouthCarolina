@@ -1,0 +1,113 @@
+html{
+    background-color: lightskyblue;
+}
+.grid-container{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1.5fr 1fr;
+    gap: 5rem;
+    background-color: lightskyblue;
+}
+
+.main-content{
+    margin-right: 5%;
+    position: relative;
+}
+
+.heading h1{
+    font-size: 350%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.main-body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    margin-top: 1%;
+    float: right;
+    margin-right: 8%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#description{
+    font-size: 120%;
+    font-style: italic;
+}
+
+#nav-link{
+    font-weight: bolder;
+}
+
+.carousel-container{
+    width: 30%;
+    border: 10px;
+    border-style: solid;
+}
+
+.fun-images{
+    margin-left: 5%;
+    margin-top: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fun-facts{
+    font-size: 120%;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#list-link a{
+    color: black;
+}
+
+.nav-item a{
+    transition: transform 0.3s ease ;
+}
+
+.nav-item a :hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+    .main-content{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .heading h1{
+        height: 2%;
+        text-align: center;
+    }
+
+    .main-body{
+        display: flex;
+        width: 80%;
+        justify-content: center;
+    }
+
+    #description{
+        font-size: 120%;
+    }
+
+    .carousel-container{
+        width: 100%;
+        margin-top: 20%;
+        border: 10px;
+        border-style: solid;
+    }
+
+    .fun-images{
+        margin-left: 0%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .fun-facts{
+        font-size: 110%;
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}

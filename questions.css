@@ -1,0 +1,83 @@
+html {
+    background-color: lightskyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#nav-link {
+    font-weight: bolder;
+}
+
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    gap: 20px; 
+    background-color: lightskyblue;
+}
+
+
+.form-box {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Map block styles */
+.map-block {
+    width: 100%; 
+    max-width: 400px; 
+    margin-right: 0;
+    float: right; 
+    margin-top: 5%;
+}
+
+#map {
+    width: 70%;
+    height: auto; 
+    float: right;
+}
+
+p {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 110%;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-box,
+    .map-block {
+        margin: 5% auto; 
+    }
+}
