@@ -3,11 +3,9 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
 #nav-link {
     font-weight: bolder;
 }
-
 
 .grid-container {
     display: grid;
@@ -17,7 +15,6 @@ html {
     gap: 20px; 
     background-color: lightskyblue;
 }
-
 
 .form-box {
     width: 100%; 
@@ -69,6 +66,34 @@ p {
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 110%;
+}
+
+.table-info {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.table-info caption {
+    font-weight: bold;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.table-info th,
+.table-info td {
+    border: 2px solid #333;
+    padding: 12px;
+    text-align: center; 
+}
+
+.table-info th {
+    background-color: lightblue; 
+    font-weight: bold;
+}
+
+.table-info tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
 }
 
 @media screen and (max-width: 768px) {
